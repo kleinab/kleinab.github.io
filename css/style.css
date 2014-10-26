@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h1, h2, h4 {
+h2, h4 {
   font-family: 'Jura', sans-serif;
 }
 
@@ -76,6 +76,7 @@ img, video {
   margin: 0px;
   top: 30px;
   left: 125px;
+  font-family: 'Jura', sans-serif;
 }
 
 #title-bar #resume a {
