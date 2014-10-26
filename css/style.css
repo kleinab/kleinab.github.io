@@ -2,11 +2,25 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+h1, h2, h4 {
+  font-family: 'Jura', sans-serif;
+}
+
 h2 {
   font-size: 50px;
   text-align: center;
   padding-top: 20px;
   margin-top: 0px;
+}
+
+h4 {
+  font-size: 27px;
+  color: #777783;
+  text-align: center;
+  padding-bottom: 50px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 p, ol {
@@ -19,12 +33,12 @@ p {
 
 a, a:visited {
   text-decoration: none;
-  color: #428bca;
+  color: #000066;
 }
 
 a:hover, a:active {
   text-decoration: underline;
-  color: #2a6496;
+  color: #000066;
 }
 
 img, video {
@@ -38,7 +52,7 @@ img, video {
 
 .item {
   margin: 0px;
-  padding: 20px 15px;
+  padding: 150px 15px;
 }
 
 .center {
@@ -60,7 +74,6 @@ img, video {
   position: absolute;
   font-size: 60px;
   margin: 0px;
-  font-family: 'Cabin Condensed', sans-serif;
   top: 30px;
   left: 125px;
 }
@@ -68,9 +81,8 @@ img, video {
 #title-bar #resume a {
   position: absolute;
   font-size: 30px;
-  float: right;
-  top: 30px;
-  right: 50px;
+  top: 100px;
+  left: 368px;
   color: white;
 }
 
@@ -103,7 +115,10 @@ img, video {
   background-image: url("../img/world-map.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 300px;
+  width: 604px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .map-label {
@@ -117,7 +132,7 @@ img, video {
   width: 6px;
   border-radius: 3px;
   background-color: #428bca;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .map-label:hover {
@@ -141,43 +156,54 @@ img, video {
 }
 
 #boston-label {
-  top: 103px;
-  left: 103px;
+  top: 77px;
+  left: 100px;
 }
 
 #queretaro-label {
-  top: 130px;
-  left: 18px;
+  top: 88px;
+  left: 32px;
 }
 
 #jerusalem-label {
-  top: 67px;
-  left: 342px;
-}
-
-.teaching-example img {
-  width: 40%;
+  top: 32px;
+  left: 277px;
 }
 
 .teaching-example {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
   display: none;
+}
+
+.teaching-example img {
+  width: 100%;
+}
+
+#boston img {
+  width: 80%;
+  float: right;
+}
+
+.teaching-example h3 {
+  text-align: center;
 }
 
 .teaching-example.selected {
   display: block;
 }
 
-#cardiocam {
-  background-color: #404040;
-  color: white;
-}
-
 #fasttrack {
-  background-color: #f8e1ff;
+  background-color: #428bca;
 }
 
 .red {
   color: red;
+}
+
+#at {
+  background-color: #8baad7;
 }
 
 #uid p, #uid ol, #fasttrack p, #cardiocam p, #at p {
@@ -188,10 +214,6 @@ img, video {
 
 #pv video, #fasttrack video, #fasttrack img {
   width: 50%;
-}
-
-#pv {
-  background-color: #c2c0bf;
 }
 
 .mit-red {
