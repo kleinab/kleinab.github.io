@@ -1,0 +1,194 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0px;
+}
+
+p, ol {
+  font-size: 20px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #428bca;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  color: #2a6496;
+}
+
+img, video {
+  background-color: white;
+  padding: 3px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 1px #dddddd;
+  width: 70%;
+}
+
+.item {
+  margin: 0px;
+  padding: 0px 15px 10px;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title-bar {
+  height: 400px;
+  background-image: url("../img/pv_banner_cropped.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+#title-bar #title-name {
+  position: absolute;
+  font-size: 60px;
+  margin: 0px;
+  font-family: 'Cabin Condensed', sans-serif;
+  top: 30px;
+  left: 125px;
+}
+
+#title-bar #resume a {
+  position: absolute;
+  font-size: 30px;
+  float: right;
+  top: 30px;
+  right: 50px;
+  color: white;
+}
+
+#title-bar #slogan {
+  position: absolute;
+  font-size: 30px;
+  float: right;
+  top: 300px;
+  right: 50px;
+}
+
+#uid img {
+  width: 70%;
+}
+
+.caption {
+  font-size: 12px;
+  width: 70%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#teaching {
+  min-height: 575px;
+  background-color: #B6DCF4;
+}
+
+#teaching #world-map {
+  background-image: url("../img/world-map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.map-label {
+  position: relative;
+  font-size: 20px;
+  color: #428bca;
+}
+
+.circle {
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background-color: #428bca;
+  margin-left: 50px;
+}
+
+.map-label:hover {
+  color: #2a6496;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.map-label.selected {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+
+.map-label:hover .circle {
+  background-color: #2a6496;
+}
+
+.map-label.selected .circle {
+  background-color: black;
+}
+
+#boston-label {
+  top: 103px;
+  left: 103px;
+}
+
+#queretaro-label {
+  top: 130px;
+  left: 18px;
+}
+
+#jerusalem-label {
+  top: 67px;
+  left: 342px;
+}
+
+.teaching-example img {
+  width: 40%;
+}
+
+/*.map-area {
+  cursor: pointer;
+}*/
+
+.teaching-example {
+  display: none;
+}
+
+.teaching-example.selected {
+  display: block;
+}
+
+#fasttrack {
+  background-color: #f8e1ff;
+}
+
+.red {
+  color: red;
+}
+
+#uid p, #uid ol, #fasttrack p, #at p {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pv video, #fasttrack video, #fasttrack img {
+  width: 50%;
+}
+
+#pv {
+  background-color: #c2c0bf;
+}
+
+.mit-red {
+  color: #a31f34;
+}

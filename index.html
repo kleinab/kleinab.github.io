@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Abigail Klein</title>
+    
+    <!--CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:700|Josefin+Slab|Open+Sans+Condensed:700,300|Cutive|Alice' rel='stylesheet' type='text/css'>
+
+    <!--Javascript-->      
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".map-label").on("click", function() {
+            var id = $(this).attr("id");
+            var name = id.split("-")[0];
+            $(".teaching-example.selected").removeClass("selected");
+            $(".map-label.selected").removeClass("selected");
+            $("#"+name).addClass("selected");
+            $(this).addClass("selected");
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+	<div class="item" id="title-bar">
+  		<span id="title-name">Abigail Klein</span>
+        <span id="slogan">Designing with the user in mind</span>
+        <span id="resume"><a href="docs/Abigail Klein Resume.pdf">R&eacute;sum&eacute;</a></span>
+	</div>
+    <div class="item" id="uid">
+        <h2>Caesar<br />
+        <small>How can teachers deliver qualitative feedback to 20,000 students in a software engineering class?</small>
+        </h2>
+        <p>Code review is invaluable to learning software engineering.  Students receive useful comments and corrections, get exposure to various coding styles, and gain experience reviewing code.  However, code review is time-consuming for staff members who need to moderate and review all student code.  This will become more difficult as software engineering courses move online and class sizes become exponentially larger.</p>
+        <p>My goal is to make code review more efficient by allowing staff members to give the same feedback to students who make similar mistakes on their assignments.  By doing so, students will receive the same feedback on their code but staff members will significantly increase their coverage of student code.  My thesis consists of creating two search tools to support staff members in code review:</p>
+            <ol>
+                <li>Increase comment-writing efficiency by searching through previous comments</li>
+                <li>Find examples of repeated mistakes made by multiple students by searching for patterns in code</li>
+            </ol>
+        <p>I am working with <a href="http://people.csail.mit.edu/rcm/">Professor Rob Miller</a> in the <a href="http://groups.csail.mit.edu/uid/">User Interface Design Group</a> in MIT's <a href="http://www.csail.mit.edu/">CSAIL</a>.</p>
+        <center>
+            <img src="img/caesar.png" /><br />
+        </center>
+        <p class="caption">Caesar, the code review tool used in the <a href="https://stellar.mit.edu/S/course/6/fa14/6.005/index.html">Software Construction</a> class at MIT.  The main content is an anonymous student's problem set submission. On the left are comments made by students and the professor (whose comment is highlighted).</p>
+    </div>
+    <div class="item" id="teaching">
+        <h2>Teaching and Curriculum Development<br />
+        <small>In order to build educational tools, I first needed to learn how students around the world learn.</small>
+        </h2>
+        <div class="row">
+            <div class="col-xs-6" id="world-map">
+                <span id="boston-label" class="map-label selected">
+                    <div class="circle"></div>
+                    Boston, Massachusetts, USA
+                </span>
+                <span id="queretaro-label" class="map-label">
+                    <div class="circle"></div>
+                    Quer&eacute;taro, M&eacute;xico
+                </span>
+                <span id="jerusalem-label" class="map-label">
+                    <div class="circle"></div>
+                    Jerusalem, Israel/Palestine
+                </span>
+            </div>
+            <div class="col-xs-6">
+                <div class="teaching-example selected" id="boston">
+                    <h3><a href="http://sicp-s3.mit.edu/cat-soop/index.py/6.01" target="_blank">Introduction to EECS (6.01)</a></h3>
+                    <img src="img/601_robot.JPG" />
+                    <p>I have been a teaching assistant in 6.01 for two semesters.  This is a lab-based class where students are introduced to software engineering, signals and systems, circuits, and probabilistic inference.  I assist students during lab times, run office hours, and lead review sessions.
+                </div>
+                <div class="teaching-example" id="queretaro">
+                    <h3>Computer education for Mexican street children</h3>
+                    <img src="img/mexican_students.jpg" />
+                    <p>I went to Mexico hoping to teach under-priviledged children computer skills.  Upon realizing that no such program existed, I established two new computer education classes: one for 4-11 year olds, and one for 12-15 year olds.  I independently developed the curriculum and taught both classes entirely in Spanish.</p>
+                </div>
+                <div class="teaching-example" id="jerusalem">
+                    <h3><a href="http://meet.mit.edu/" target="_blank_">Middle East Education through Technology (MEET)</a></h3>
+                    <img src="img/meet.jpg" />
+                    <p>I co-developed a curriculum to teach Django to high school students in Israel.  What is unique about the program is that half of the students are Israeli and half are Palestinian.  They come together because of a mutual desire to learn and end up leaving the program with a new perspective about the conflict in the middle east.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item" id="fasttrack">
+        <h2>FastTrack</h2>
+        <p>I worked at <a href="http://www.theserverlabs.com/cloud-en/cloud-fast-track.html">The Server Labs</a>, a start-up in the heart of Madrid, Spain. I built a website which allows users to visualize their Amazon EC2 virtual machine and click "Deploy".</p>
+        <center>
+        <video controls>
+            <source src="videos/fasttrack.mp4" type="video/mp4">
+            <source src="videos/fasttrack.ogg" type="video/ogg">
+            <img src="img/fasttrack.png" />
+        </video>
+        </center>
+    </div>
+    <div class="item" id="at">
+        <h2>Assistive Technologies</h2>
+        <p>I took a class at MIT called <a href="http://courses.csail.mit.edu/PPAT/fall2014/index.html" target="_blank">Principles and Practices of Assistive Technologies</a>.  During this class, I had the opportunity to use my skills to help a person in the community.  Through this, I learned a lot about human-centered design given a large number of constraints.  This year, I am a lab assistant for the class.  I mentor a team of students and am organizing a lecture.</p>
+        <p>After this class, four of my classmates and I founded ATHack, MIT's first assistive technology hackathon.</p>
+        <center>
+            <iframe src="http://techtv.mit.edu/embeds/29542?size=large&amp;custom_width=432&amp;external_stylesheet=" frameborder="0" width="544" height="306"></iframe><br />
+            <div class="caption"><a href="http://techtv.mit.edu/videos/29542-the-technology-we-build-6-811-principles-and-practice-of-assistive-technology-ppat" target="_blank"><i>Video Credit</i>: Ben Glass and Tommy Girdwood</a></div>
+        </center>
+    </div>
+    <div class="item" id="pv">
+        <h2>Pole Vaulting<br />
+        <small>I compete for the MIT Varsity Track and Field team as a pole vaulter.  <span class="mit-red"><b>GO TECH!</b></span></small>
+        </h2>
+        <center>
+        <video controls>
+            <source src="videos/pv.mp4" type="video/mp4">
+            <source src="videos/pv.ogg" type="video/ogg">
+        </video>
+        </center>
+    </div>
+</body>
+</html>
