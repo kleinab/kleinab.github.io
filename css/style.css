@@ -195,6 +195,10 @@ img, video {
   display: block;
 }
 
+#vision {
+  background-color: #8baad7;
+}
+
 #fasttrack {
   background-color: #428bca;
 }
@@ -207,13 +211,13 @@ img, video {
   background-color: #8baad7;
 }
 
-#uid p, #uid ol, #fasttrack p, #cardiocam p, #at p {
+#uid p, #uid ol, #vision p, #fasttrack p, #cardiocam p, #at p {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#pv video, #fasttrack video, #fasttrack img {
+#vision video, #video img, #pv video, #fasttrack video, #fasttrack img {
   width: 50%;
 }
 
